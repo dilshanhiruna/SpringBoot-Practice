@@ -1,6 +1,12 @@
 package todolist.todo;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class ToDo {
+
+    @Id
     Integer id;
     String name;
     String summary;
