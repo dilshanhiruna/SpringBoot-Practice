@@ -25,10 +25,6 @@ public class ToDoService {
     public void createToDo(ToDo toDo) {
         toDoRepository.save(toDo);
     }
-    public void updateToDo(Integer id,ToDo toDo) {
-        toDoRepository.save(toDo);
-    }
-    public void deleteTodo(Integer id) {
-        toDoRepository.deleteById(id);
-    }
+    public void updateToDo(Integer id,ToDo toDo) { toDoRepository.save(toDo);}
+    public void deleteTodo(Integer id) { toDoRepository.deleteById(id); }
 }
